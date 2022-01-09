@@ -4,8 +4,11 @@
   "main": "index.js",
   "repository": "https://github.com/torish14/vue3-dismantling-new-book.git",
   "author": "torish14 <nanamin.104@icloud.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "core-js": "^3.20.2",
     "vue": "^3.2.26"
+  },
   "devDependencies": {
     "@vue/cli-service": "^4.5.15",
     "@vue/compiler-sfc": "^3.2.26",
