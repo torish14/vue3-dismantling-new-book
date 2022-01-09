@@ -5,6 +5,10 @@
   "repository": "https://github.com/torish14/vue3-dismantling-new-book.git",
   "author": "torish14 <nanamin.104@icloud.com>",
   "license": "MIT",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
   "dependencies": {
     "core-js": "^3.20.2",
     "vue": "^3.2.26"
