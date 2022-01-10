@@ -10,6 +10,12 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit"
   },
+  "jest": {
+    "preset": "@vue/cli-plugin-unit-jest/presets/typescript",
+    "transform": {
+      "^.+\\.vue$": "vue-jest"
+    }
+  },
   "dependencies": {
     "core-js": "^3.20.2",
     "vue": "^3.2.26"
