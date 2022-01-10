@@ -4,11 +4,10 @@ module.exports = {
   },
   root: true,
   extends: [
-    'eslint:recommended',
     'plugin:vue/vue3-recommended',
-    '@vue/typescript/recommended',
-    '@vue/prettier',
-    '@vue/prettier/@typescript-eslint',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
+    'eslint:recommended',
   ],
   parserOptions: {
     ecmaVersion: 2020,
@@ -20,4 +19,26 @@ module.exports = {
       process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'vue/no-unused-components': 'off',
   },
+  overrides: [
+    {
+      files: [
+        '**/__tests__/*.{j,t}s?(x)',
+        '**/tests/unit/**/*.spec.{j,t}s?(x)',
+      ],
+      env: {
+        jest: true,
+      },
+    },
+    {
+      plugins: ['cypress'],
+      files: ['**/tests/unit/**/*.{j,t}s?(x)'],
+      env: {
+        mocha: true,
+        'cypress/globals': true,
+      },
+      rules: {
+        strict: 'off',
+      },
+    },
+  ],
 }
