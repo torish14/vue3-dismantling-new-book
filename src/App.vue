@@ -1,18 +1,10 @@
 <template>
 	<div>
-		{{ message }}
+		<p>vue3</p>
 	</div>
 </template>
 
-<script>
-export default {
-	name: 'App',
-	data() {
-		return {
-			message: 'Hello Vue!'
-		}
-	}
-}
+<script lang="ts">
 </script>
 
 <style scoped></style>
